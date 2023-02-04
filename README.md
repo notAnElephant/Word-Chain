@@ -10,14 +10,14 @@ A projekt egy szóláncot alkot a megadott szavakból bizonyos szabályok szerin
 
 Reprezentáljuk a feladatot egy **gráfelméleti problémaként**. Vegyünk egy egyszerű gráfot. A csúcsok jelentik a szavakat, az élek pedig a szavak közti átalakíthatóságot - azaz két csúcs akkor lesz összekötve, ha a két szó egymásba átalakítható, azaz állhatnak egymás mellett a szóláncban. Mivel ekkor a gráfban bármely két szomszédos szó állhat egymás mellett a szóláncban és az összes szót fel kell használnunk, a következőképpen egyszerűsödik le a probléma: 
 
-**adjunk meg egy Hamilton-utat a gráfban, ha létezik. **
+** Adjunk meg egy Hamilton-utat a gráfban, ha létezik. **
 
 Ez egy megoldható, NP-teljes probléma.
 
 ### Mikor lesz két szó egymásba átalakítható?
 Akkor, ha az első szóból a másodikat megkaphatjuk úgy, hogy
  - hozzáadunk egy betűt,
- - kitörlünk egy betűt vagy
+ - kitörlünk egy betűt, vagy
  - módosítunk egy betűt.
 
 Pontosan erről a három dologról szól a [Levenshtein-távolság](https://en.wikipedia.org/wiki/Levenshtein_distance) fogalma is. 
